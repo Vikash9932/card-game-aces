@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courier+Prime:wght@700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(0deg, #023616, #07863d);
+  font-family: "Courier Prime", monospace;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.count {
+  text-align: center;
+  overflow: auto;
+}
+
+.card-count,
+.ace-count {
+  color: white;
+  background-color: black;
+  border: 1px solid #7de40d;
+  width: 10rem;
+  height: 6rem;
+  text-align: center;
+  display: inline-block;
+  margin-top: 5rem;
+}
+
+.number-count {
+  margin-bottom: 0rem;
+  font-size: 2rem;
+}
+
+.text-count {
+  margin-top: 0.3rem;
+  font-size: 1.2 rem;
+  font-weight: normal;
+}
+
+.cards {
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+  height: 30vh;
+  margin-bottom: 5rem;
+}
+
+.card-container {
+  border-radius: 1rem;
+  width: 140px;
+  min-height: 9rem;
+  margin: 25px;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card1 {
+  transform: rotate(0.045turn) translateY(30px);
+  align-self: flex-start;
+}
+
+.card2 {
+  transform: rotate(0.025turn) translateY(40px);
+  align-self: center;
+}
+
+.card3 {
+  transform: rotate(0turn) translateY(20px);
+  align-self: flex-end;
+}
+
+.card4 {
+  transform: rotate(-0.025turn) translateY(40px);
+  align-self: center;
+}
+
+.card5 {
+  transform: rotate(-0.045turn) translateY(30px);
+  align-self: flex-start;
+}
+
+.card11 {
+  align-self: flex-start;
+}
+
+.card22 {
+  align-self: flex-start;
+}
+
+.rank {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.suit-small {
+  margin-left: 0.5rem;
+}
+
+.suit-large {
+  align-self: flex-end;
+  margin-right: 0.5rem;
+}
+
+.img-small {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.img-large {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.win {
+  display: flex;
+  justify-content: center;
+  height: 12vh;
+  z-index: 1;
+}
+
+.lose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2rem;
+  user-select: none;
+}
+
+.deal-button {
+  width: 12rem;
+  height: 5rem;
+  margin: 3rem auto;
+  background-color: yellow;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.play-again-button {
+  width: 10rem;
+  height: 2.5rem;
+  margin: 3rem auto;
+  border: 2px solid yellow;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: "Alfa Slab One", cursive;
+  color: yellow;
+}
+
+.reset-button {
+  border: 2px solid yellow;
+  border-radius: 1rem;
+  width: 6rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-size: 1.25rem;
+  margin: 3rem 2rem 3rem auto;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.deal-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #d0d0d0;
+  user-select: none;
+}
+
+.reset-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #d0d0d0;
+  user-select: none;
+}
+
+.play-again-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #d0d0d0;
+  user-select: none;
+}
+
+/* for mobile devices */
+@media (max-width: 1450px) {
+  .reset-button {
+    margin: 3rem auto;
+    margin-top: 0;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 12rem;
+  }
+
+  .card1 {
+    transform: none;
+    align-self: center;
+  }
+
+  .card2 {
+    transform: none;
+    align-self: center;
+  }
+
+  .card3 {
+    transform: none;
+    align-self: center;
+  }
+
+  .card4 {
+    transform: none;
+    align-self: center;
+  }
+
+  .card5 {
+    transform: none;
+    align-self: center;
+  }
+
+  .card11 {
+    align-self: center;
+  }
+
+  .card22 {
+    align-self: center;
+  }
+
+  .lose {
+    margin-top: 2rem;
+  }
+}
